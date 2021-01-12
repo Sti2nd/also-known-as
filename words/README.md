@@ -20,3 +20,9 @@ Follow the instructions on [Jupyter's homepage](https://jupyter.org/install.html
 
 1. Run `pip install -r requirements.txt` to install the required packages.
 2. Run `jupyter-lab` to start Jupyter lab.
+
+## Data
+
+### Norwegian
+
+nsf2020.txt is a word list taken from http://www2.scrabbleforbundet.no/?p=4527 (the Norwegian Scrabble Foundation). It isn't specified any licence on it as of 12.01.2021 (DDMMYYYY).

@@ -1,0 +1,10 @@
+# IDEs
+profile_default/
+ipython_config.py
+.ipynb_checkpoints
+
+# Python environments
+.venv
+
+# Out files
+out/
