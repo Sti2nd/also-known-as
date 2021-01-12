@@ -1,0 +1,11 @@
+.appContainer {
+  max-width: 50rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.headerSection {
+  width: 100%;
+}

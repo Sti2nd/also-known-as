@@ -2,17 +2,18 @@
   box-sizing: border-box;
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.9);
-  width: 15rem;
-  height: 23.4rem;
+  width: 100%;
+  max-width: 22rem;
+  max-height: 34rem;
   padding: 1rem;
   margin: 1rem;
 }
 
 .cardList {
   padding-inline-start: 1.4rem;
-  font-size: large;
+  font-size: larger;
 }
 
 .cardListItem {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
