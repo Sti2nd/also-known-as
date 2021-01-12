@@ -13,6 +13,9 @@
 
 # IDEs
 .vscode/
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
 
 # misc
 .DS_Store
@@ -27,3 +30,6 @@ yarn-error.log*
 
 .eslintcache
 debug.log
+
+# Python environments
+env/
