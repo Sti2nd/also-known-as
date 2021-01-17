@@ -1,5 +1,7 @@
-# Wikipedia dump
+# Files
 nowiki-20210101-pages-articles.xml
+Wikipedia-20210117201724.xml
+out/
 
 # IDEs
 profile_default/
@@ -8,6 +10,3 @@ ipython_config.py
 
 # Python environments
 .venv
-
-# Out files
-out/
