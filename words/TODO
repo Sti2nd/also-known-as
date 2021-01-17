@@ -1,0 +1,5 @@
+Extract text from the Wikipedia dump with
+
+```
+python -m wikiextractor.WikiExtractor nowiki-20210101-pages-articles.xml
+```
