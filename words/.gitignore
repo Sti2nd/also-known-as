@@ -10,3 +10,4 @@ ipython_config.py
 
 # Python environments
 .venv
+.venv-wsl
