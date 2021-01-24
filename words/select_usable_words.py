@@ -1,20 +1,20 @@
-filename = "words_86593134.txt"
+filename = "wikipedia_words.txt"
 
 accepted_words: list[str] = []
 with open(f"./out/{filename}", "r", encoding="utf-8") as f:
     print('\nTHE WORD FILTRATOR\n' + 
-    'Press Enter to skip (go to next word), type "y" to add word to the accept list.\n' +
-    'Type anything to add that input to the list.\n' +
-    'To abort type "n"\n')
+    'Type "s" to skip (go to next word), click Enter to add word to the accept list.\n' +
+    'Type anything to add that input to the list instead.\n' +
+    'To stop and write to file, type "n"\n')
 
     for line in f:
         inp = input(line)
         if (inp == "n"):
             break
-        elif (inp == "y"):
-            accepted_words.append(line)
-        else:
+        elif (inp == "s"):
             continue
+        else:
+            accepted_words.append(line)
     
 f.close()
 
