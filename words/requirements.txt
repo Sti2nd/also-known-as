@@ -1,6 +1,7 @@
 jupyter==1.0.0
+jupyterlab==3.0.6
 pandas==1.2.0
 black==20.8b1
 pyspark==3.0.1
 pycountry==20.7.3
-nltk==3.5
+spacy==2.3.5
