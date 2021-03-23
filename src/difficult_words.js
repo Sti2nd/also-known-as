@@ -844,3 +844,5 @@ export let words = [
 "planlegge",
 "israel",
 ];
+
+export default words;
