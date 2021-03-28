@@ -776,8 +776,6 @@ export let words = [
 "lee",
 "representant",
 "oppnå",
-"first",
-"score",
 "grave",
 "østerrike",
 "antenne",

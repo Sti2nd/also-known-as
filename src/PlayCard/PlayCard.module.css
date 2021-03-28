@@ -2,11 +2,10 @@
   box-sizing: border-box;
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.9);
-  width: 100%;
+  flex-grow: 1;
   max-width: 22rem;
   max-height: 34rem;
   padding: 1rem;
-  margin: 1rem;
 }
 
 .cardList {

@@ -1,10 +1,10 @@
-import styles from "./Card.module.css";
+import styles from "./PlayCard.module.css";
 
-interface ICard {
+export interface ICard {
   words: string[];
 };
 
-export default function Card({ words }: ICard) {
+export default function PlayCard({ words }: ICard) {
   const items = words.map(word => (
     <li key={word} className={styles.cardListItem}>{word}</li>
   ));

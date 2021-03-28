@@ -1,15 +1,26 @@
-import styles from './App.module.css';
-import Card from './Card/Card';
+import styles from "./App.module.css";
 import words from "./difficult_words";
+import { knuthShuffle as shuffle } from "knuth-shuffle";
+
+import { useState } from "react";
+import PlayView from "./PlayView/PlayView";
+import StartView from "./StartView/StartView";
+import { Button, Container } from "react-bootstrap";
 
 export default function App() {
+  const shuffledWords = shuffle(words.slice());
+  const [showPlayView, setShowPlayView] = useState<boolean>();
+
   return (
-    <div className={styles.appContainer}>
-      <div className={styles.headerSection}>
-        <h1>Play Alias online</h1>
-        <p>Currently only Norwegian is supported. Click on the button to begin!</p>
-      </div>
-      <Card words={words} />
-    </div>
+    <>
+      <Button>Menu</Button>
+      <Container className={styles.appContainer}>
+        {showPlayView ? (
+          <PlayView words={shuffledWords} />
+        ) : (
+          <StartView setShowPlayView={setShowPlayView} />
+        )}
+      </Container>
+    </>
   );
 }

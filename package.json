@@ -11,7 +11,10 @@
     "@types/node": "^12.19.12",
     "@types/react": "^16.14.2",
     "@types/react-dom": "^16.9.10",
+    "bootstrap": "^4.6.0",
+    "knuth-shuffle": "^1.0.8",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "typescript": "^4.1.3",
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/knuth-shuffle": "^1.0.0"
   }
 }
