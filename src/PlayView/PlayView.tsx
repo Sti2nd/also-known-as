@@ -1,4 +1,4 @@
-import 'swiper/swiper.min.css';
+import "swiper/swiper.min.css";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import PlayCard, { ICard } from "../PlayCard/PlayCard";
@@ -28,7 +28,9 @@ export default function PlayView({ words }: ICard) {
 
   return (
     <>
-      <Swiper className={styles.playContainer}>{cards}</Swiper>
+      <Swiper className={styles.cardContainer} spaceBetween={50}>
+        {cards}
+      </Swiper>
       <Button
         className="mr-4"
         disabled={cardNumber === 0}
