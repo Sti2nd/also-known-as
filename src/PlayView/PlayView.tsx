@@ -1,13 +1,21 @@
+import 'swiper/swiper.min.css';
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import PlayCard, { ICard } from "../PlayCard/PlayCard";
+import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./PlayView.module.css";
+import { chunkArray } from "../tools";
 
 export default function PlayView({ words }: ICard) {
   const NUM_WORDS_PER_CARD = 8;
   const [cardNumber, setCardNumber] = useState<number>(0);
-  const startWordPosition = cardNumber * NUM_WORDS_PER_CARD;
-  const endWordPosition = startWordPosition + 8;
+  const cards = chunkArray(words, NUM_WORDS_PER_CARD)
+    .filter((wordBatch) => wordBatch.length === NUM_WORDS_PER_CARD)
+    .map((wordBatch, idx) => (
+      <SwiperSlide className={styles.swiperContainer} key={idx}>
+        <PlayCard key={idx} words={wordBatch} />
+      </SwiperSlide>
+    ));
 
   const previousCard = () => {
     if (cardNumber === 0) return;
@@ -20,8 +28,7 @@ export default function PlayView({ words }: ICard) {
 
   return (
     <>
-      <PlayCard words={words.slice(startWordPosition, endWordPosition)} />
-      <hr />
+      <Swiper className={styles.playContainer}>{cards}</Swiper>
       <Button
         className="mr-4"
         disabled={cardNumber === 0}

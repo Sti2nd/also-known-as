@@ -16,7 +16,9 @@ export default function App() {
       <Button>Menu</Button>
       <Container className={styles.appContainer}>
         {showPlayView ? (
-          <PlayView words={shuffledWords} />
+          <div className={styles.playContainer}>
+            <PlayView words={shuffledWords} />
+          </div>
         ) : (
           <StartView setShowPlayView={setShowPlayView} />
         )}

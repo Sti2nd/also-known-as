@@ -3,9 +3,9 @@
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.9);
   flex-grow: 1;
+  padding: 1rem;
   max-width: 22rem;
   max-height: 34rem;
-  padding: 1rem;
 }
 
 .cardList {

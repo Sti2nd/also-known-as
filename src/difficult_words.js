@@ -112,7 +112,6 @@ export let words = [
 "høy",
 "plass",
 "svensk",
-"norges",
 "fire",
 "kamp",
 "stå",
