@@ -8,11 +8,11 @@ interface IStartView {
 export default function StartView({ setShowPlayView }: IStartView) {
   return (
     <div className={styles.headerSection}>
-      <h1>Play Alias online</h1>
+      <h1>Spill Alias online</h1>
       <p>
-        Currently only Norwegian is supported. Click on the button to begin!
+        Klikk på knappen for å begynne!
       </p>
-      <Button onClick={() => setShowPlayView(true)}>Start playing</Button>
+      <Button onClick={() => setShowPlayView(true)}>Spill Alias</Button>
     </div>
   );
 }

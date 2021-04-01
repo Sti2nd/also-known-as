@@ -1,11 +1,13 @@
+import { knuthShuffle as shuffle } from "knuth-shuffle";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import { useState } from "react";
+
 import styles from "./App.module.css";
 import words from "./difficult_words";
-import { knuthShuffle as shuffle } from "knuth-shuffle";
-
-import { useState } from "react";
 import PlayView from "./PlayView/PlayView";
 import StartView from "./StartView/StartView";
-import { Button, Container } from "react-bootstrap";
 
 export default function App() {
   const shuffledWords = shuffle(words.slice());
@@ -13,7 +15,13 @@ export default function App() {
 
   return (
     <>
-      <Button>Menu</Button>
+      <Navbar bg="light" variant="light">
+        <Nav className="mr-auto">
+          <Nav.Link href="" onClick={() => setShowPlayView(false)}>
+            Hjem
+          </Nav.Link>
+        </Nav>
+      </Navbar>
       <Container className={styles.appContainer}>
         {showPlayView ? (
           <div className={styles.playContainer}>
