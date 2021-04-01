@@ -2,10 +2,12 @@
 
 ## Deploying
 
-Copy everything from the build folder to the `/docs` folder.
+`npm run build`
+
+Then copy everything from the build folder to the `/docs` folder with:
 
 ```bash
 cp -a build/. docs/
 ```
 
-Then simply push to Github which will host it.
+Then push to Github which will host it.
