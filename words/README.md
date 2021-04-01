@@ -23,7 +23,7 @@ Follow [the official guide](https://code.visualstudio.com/docs/python/jupyter-su
 Follow the instructions on [Jupyter's homepage](https://jupyter.org/install.html), but the following probably works:
 
 1. Run `pip install -r requirements.txt` to install the required packages.
-2. Run `jupyter-lab` to start Jupyter lab.
+2. Run `jupyter lab` to start Jupyter lab.
 
 ## Data
 
